@@ -1,48 +1,56 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import maharashtraBoard from '../assets/images/maharashtra-board.jpg'
+import examSystem from '../assets/images/exam-system.jpg'
+import syllabus from '../assets/images/syllabus.jpg'
+import educationMinister from '../assets/images/education-minister.jpg'
+import formerMinister from '../assets/images/former-minister.jpg'
+import unionMinister from '../assets/images/union-minister.jpg'
+
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('about')
 
-  const boardInfo = {
-    about: {
-      title: "About Maharashtra State Board",
-      content: "The Maharashtra State Board of Secondary and Higher Secondary Education is a statutory and autonomous body established under the Maharashtra Secondary Boards Act. It conducts the SSC (Class 10) and HSC (Class 12) examinations in the state of Maharashtra.",
-      image: "/src/assets/images/maharashtra-board.jpg"
-    },
-    exams: {
-      title: "SSC Examination System",
-      content: "The Secondary School Certificate (SSC) examination is conducted annually in March. The examination covers subjects from 5th to 10th standard as per the Maharashtra State Board curriculum. The board ensures fair and transparent evaluation processes.",
-      image: "/src/assets/images/exam-system.jpg"
-    },
-    syllabus: {
-      title: "Curriculum and Syllabus",
-      content: "The Maharashtra State Board follows a comprehensive curriculum designed to provide holistic education. The syllabus is updated periodically to incorporate changes in educational trends and technological advancements.",
-      image: "/src/assets/images/syllabus.jpg"
-    }
+ const boardInfo = {
+  about: {
+    title: "About Maharashtra State Board",
+    content: "...",
+    image: maharashtraBoard
+  },
+  exams: {
+    title: "SSC Examination System",
+    content: "...",
+    image: examSystem
+  },
+  syllabus: {
+    title: "Curriculum and Syllabus",
+    content: "...",
+    image: syllabus
   }
+}
 
-  const educationLeaders = [
-    {
-      name: "Shri Deepak Kesarkar",
-      position: "Minister of School Education, Maharashtra",
-      image: "/src/assets/images/education-minister.jpg",
-      bio: "Responsible for overseeing the school education system in Maharashtra, including the SSC board."
-    },
-    {
-      name: "Shri Varsha Gaikwad",
-      position: "Former Education Minister, Maharashtra",
-      image: "/src/assets/images/former-minister.jpg",
-      bio: "Implemented several reforms in the Maharashtra education system during her tenure."
-    },
-    {
-      name: "Shri Ramesh Pokhriyal Nishank",
-      position: "Former Union Education Minister, India",
-      image: "/src/assets/images/union-minister.jpg",
-      bio: "Oversaw the implementation of National Education Policy 2020 at the national level."
-    }
-  ]
+const educationLeaders = [
+  {
+    name: "Shri Deepak Kesarkar",
+    position: "Minister of School Education, Maharashtra",
+    image: educationMinister,
+    bio: "Responsible for overseeing the school education system in Maharashtra, including the SSC board."
+  },
+  {
+    name: "Shri Varsha Gaikwad",
+    position: "Former Education Minister, Maharashtra",
+    image: formerMinister,
+    bio: "Implemented several reforms in the Maharashtra education system during her tenure."
+  },
+  {
+    name: "Shri Ramesh Pokhriyal Nishank",
+    position: "Former Union Education Minister, India",
+    image: unionMinister,
+    bio: "Oversaw the implementation of National Education Policy 2020 at the national level."
+  }
+]
+
 
   return (
     <div className="home-page fade-in">
