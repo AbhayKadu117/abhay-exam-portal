@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../App.css'
-import maharashtraBoard from '../assets/images/maharashtra-board.jpg'
-import examSystem from '../assets/images/exam-system.jpg'
-import syllabus from '../assets/images/syllabus.jpg'
-import educationMinister from '../assets/images/education-minister.jpg'
+import '../App.css';
+import maharashtraBoard from '../assets/images/maharashtra-board.jpg';
+import examSystem from '../assets/images/staff-1.jpg'
+import syllabus from '../assets/images/staff-1.jpg'
+import educationMinister from '../assets/images/staff-1.jpg'
 import formerMinister from '../assets/images/former-minister.jpg'
 import unionMinister from '../assets/images/union-minister.jpg'
 
